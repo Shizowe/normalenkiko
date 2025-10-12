@@ -1,2 +1,0 @@
-# normalenkiko
-portfolio
