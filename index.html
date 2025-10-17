@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Покана за Рожден ден Парти! 🎉</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="invitation-card">
+            <h1 class="welcome-title">🎉 Добре дошъл на Рождения ми ден 🎉</h1>
+            
+            <div class="party-details">
+                <div class="detail-item">
+                    <span class="icon">📅</span>
+                    <span class="text">Дата & Час: Октомври 25, 2025, От 21:30</span>
+                </div>
+                <div class="detail-item">
+                    <span class="icon">📍</span>
+                    <span class="text">Location: У нас в Механата 🍻</span>
+                </div>
+            </div>
+            
+            <div class="rsvp-section">
+                <h2>Ще дойдеш ли?</h2>
+                <div class="input-group">
+                    <input type="text" id="guestName" placeholder="Напиши името си тук..." maxlength="50">
+                    <button id="rsvpButton" class="rsvp-btn">Идвам! 🎊</button>
+                </div>
+            </div>
+            
+            <div id="thankYouMessage" class="thank-you hidden">
+                <h2>Благодаря ти ,че ще присъстваш - <span id="guestNameDisplay"></span>! 🎉</h2>
+                <p>Нямам търпение да се позабавляваме и посмеем!</p>
+            </div>
+            
+            <!-- Admin Panel -->
+            <div class="admin-panel">
+                <button id="adminToggle" class="admin-btn">☰</button>
+                <div id="adminContent" class="admin-content hidden">
+                    <div class="admin-header">
+                        <h3>👥 Гости</h3>
+                        <button id="closeAdmin" class="close-btn">✕</button>
+                    </div>
+                    <div id="guestList" class="guest-list">
+                        <p class="no-guests">Все още няма записани гости...</p>
+                    </div>
+                    <div class="admin-stats">
+                        <p>Общо: <span id="totalGuests">0</span></p>
+                        <button id="clearAll" class="clear-btn">Изтрий</button>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Password Modal -->
+            <div id="passwordModal" class="password-modal hidden">
+                <div class="password-content">
+                    <h3>🔐 Достъп само за Рожденика</h3>
+                    <input type="password" id="passwordInput" placeholder="Въведи парола..." maxlength="20">
+                    <div class="password-buttons">
+                        <button id="passwordSubmit" class="password-btn">Вход</button>
+                        <button id="passwordCancel" class="password-btn cancel">Отказ</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Confetti Canvas -->
+    <canvas id="confetti-canvas"></canvas>
+    
+    <!-- API Configuration -->
+    <script src="api-config.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
