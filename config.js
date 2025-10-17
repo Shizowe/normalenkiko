@@ -1,8 +1,8 @@
 // JSONBin.io API Configuration
 const API_CONFIG = {
-    BIN_ID: '68ec37b9ae596e708f107d83',
-    API_KEY: '$2a$10$MXJv3C4DwK3S.j4fM/qXkO4PNTtu/tvTNzTaTXPbLSNdxwBJ82oam',
-    BASE_URL: 'https://api.jsonbin.io/v3/b/',
+    BIN_ID: '68f2b4ddae596e708f19864a',
+    API_KEY: '$2a$10$VffiaD27D/bZOBvLOcVuwO9FBaW0pHCf1/zS7h9W1YKub5N4JFV3C',
+    BASE_URL: 'https://api.jsonbin.io/v3/b/68f2b4ddae596e708f19864a',
 
     get endpoints() {
         return {
@@ -14,8 +14,8 @@ const API_CONFIG = {
     get headers() {
         return {
             'Content-Type': 'application/json',
-            'X-Master-Key': this.API_KEY,
-            'X-Access-Key': '68ec347f43b1c97be964c4be',
+            'X-Master-Key': '$2a$10$VffiaD27D/bZOBvLOcVuwO9FBaW0pHCf1/zS7h9W1YKub5N4JFV3C',
+            'X-Access-Key': '$2a$10$rdumoM6MRm5Sob8JGmezAOwdzRyidjZukZ8ERNSa6qZBHwnLwnovq',
         };
     },
 };
